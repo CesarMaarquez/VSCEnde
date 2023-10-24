@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoPagina.png" alt="logo" width="90"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-verde text-white py-3">Portal</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="párrafos">
+                    <h1 class="text-center">PÁRRAFOS</h1>
+                    <p>Primer párrafo</p>
+                    <p>Este ya es el segundo y, además,<span1>cambio el color</span1>.</p>
+                    <p>tambien hay que usar el strong y em (cursiva)</p>
+                    <p><strong>Como por ejemplo aquí </strong></p>
+                    <p><em>Ahora en cursiva</em></p>
+                    <h1>También podemos introducir distintos tamaños (h1)</h1>
+                    <h2>En este caso h2</h2>
+                    <p><h3>h3</h3></p>                    
+                    <h4>h4</h4>
+                    <h5>h5...</h5>
+                    <p>x<sub>3</sub>+5, utilizando el <span2>"sub"</span2></p>
+                    <p>x<sup>4</sup>+9, utilizando el <span3>"sup"</span3></p>
+                    <div class="bg-verde">
+                        en el caso de div, ocupa toda la horizontal
+                    </div>
+                    <div>hey</div>
+                    
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-verde text-center text-white py-3">&copy; César Márquez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
